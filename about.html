@@ -1,0 +1,55 @@
+{% extends 'index.html' %}
+
+{% block navbar %}
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="{{url_for('about')}}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('register')}}">Registration</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{url_for('login')}}">Login</a>
+    </li>
+  </ul>
+{% endblock %}
+
+{% block content %}
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About 
+              </h2>
+              
+            </div>
+            <p align="justify">
+              <h4 align="justify">This project focuses on predicting cellular network traffic using machine learning algorithms combined with data reduction techniques. By analyzing historical traffic data, the project aims to forecast future network usage, ensuring efficient resource allocation and improved network performance.</h4> 
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img_container">
+            <div class="img-box b1">
+              <img src="/static/images/f5.jpeg" alt="" />
+            </div>
+            <div class="img-box b2">
+              <img src="/static/images/f1.jpg" alt="" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
